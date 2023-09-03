@@ -59,10 +59,10 @@ int main() {
         //          l = 0
 
         for (int i = 2; i <= N; i++) {
-            for (int j = 0; j <= N * 9; j++) {
+            for (int k = 0; k <= N * 9; k++) {
                 for (int l = 0; l <= 9; l++) {
-                    if (j >= l) {
-                        SumQuantity[i][j] += SumQuantity[i - 1][j - l];
+                    if (k >= l) {
+                        SumQuantity[i][k] += SumQuantity[i - 1][k - l];
                     }
                 }
             }
